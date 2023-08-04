@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 259701054}
   - component: {fileID: 259701055}
+  - component: {fileID: 259701056}
   m_Layer: 0
   m_Name: BG2
   m_TagString: Untagged
@@ -207,6 +208,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &259701056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259701053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776df166d29998847a2528b40be34379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420031}
+  followTarget: {fileID: 563508464}
 --- !u!1 &298886518
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1025947191}
   - component: {fileID: 1025947192}
+  - component: {fileID: 1025947193}
   m_Layer: 0
   m_Name: BG3
   m_TagString: Untagged
@@ -565,6 +581,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1025947193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025947190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776df166d29998847a2528b40be34379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420031}
+  followTarget: {fileID: 563508464}
 --- !u!1 &1295656382
 GameObject:
   m_ObjectHideFlags: 3
@@ -663,6 +693,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101445160}
   - component: {fileID: 2101445161}
+  - component: {fileID: 2101445162}
   m_Layer: 0
   m_Name: BG1
   m_TagString: Untagged
@@ -737,6 +768,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2101445162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101445159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776df166d29998847a2528b40be34379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 519420031}
+  followTarget: {fileID: 563508464}
 --- !u!1001 &6494244429768013031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -747,6 +792,10 @@ PrefabInstance:
     - target: {fileID: 307520455492334306, guid: 264752bb15913f84a8ab3d70bd8b0658, type: 3}
       propertyPath: m_BodyType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 307520455492334306, guid: 264752bb15913f84a8ab3d70bd8b0658, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 307520455492334306, guid: 264752bb15913f84a8ab3d70bd8b0658, type: 3}
       propertyPath: m_GravityScale
