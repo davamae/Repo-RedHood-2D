@@ -6,13 +6,23 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb;
+    Animator animator;
     public float walkSpeed;
     Vector2 moveInput; // pulls x and y movement (vector 2)
 
-    public bool IsMoving { get; private set; }
+    [SerializeField]
+    private bool _isMoving = false;
+    
+    public bool IsMoving { get {
+        return _isMoving;
+    } private set {
+        _isMoving = value;
+        animator.SetBool("isMoving", value);
+    } }
 
     private void Awake() { // if you want something found AS SOON AS POSSIBLE, use void Awake; it starts before the Start function
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
