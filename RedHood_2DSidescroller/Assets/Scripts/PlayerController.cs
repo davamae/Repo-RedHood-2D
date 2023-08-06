@@ -16,9 +16,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private bool _isMoving = false;
     
-    public bool IsMoving { get {
-        return _isMoving;
-    } private set {
+    public bool IsMoving { get 
+    {
+        return _isMoving; 
+    } private set 
+    {
         _isMoving = value;
         animator.SetBool(AnimationStrings.isMoving, value);
     } }
@@ -68,6 +70,12 @@ public class PlayerController : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context) {
         if(context.started && touchingDirections) {
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
+        }
+    }
+
+    public void OnAttack(InputAction.CallbackContext context) {
+        if(context.started) {
+            animator.SetTrigger(AnimationStrings.attackTrigger);
         }
     }
 }

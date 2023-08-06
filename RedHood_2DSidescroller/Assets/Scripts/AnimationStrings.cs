@@ -8,4 +8,5 @@ public class AnimationStrings : MonoBehaviour
     internal static string isGrounded = "isGrounded";
     internal static string isOnWall = "isOnWall";
     internal static string isOnCeiling = "isOnCeiling";
+    internal static string attackTrigger = "attack";
 }
