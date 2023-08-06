@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     public float walkSpeed;
     Vector2 moveInput; // pulls x and y movement (vector 2)
+    TouchingDirections touchingDirections;
 
     [SerializeField]
     private bool _isMoving = false;
@@ -35,18 +36,7 @@ public class PlayerController : MonoBehaviour
     private void Awake() { // if you want something found AS SOON AS POSSIBLE, use void Awake; it starts before the Start function
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        touchingDirections = GetComponent<TouchingDirections>();
     }
 
     private void FixedUpdate() {
@@ -70,6 +60,12 @@ public class PlayerController : MonoBehaviour
         else if (moveInput.x < 0 && IsFacingRight){
             // face left
             IsFacingRight = false;
+        }
+    }
+
+    public void OnJump(InputAction.CallbackContext context) {
+        if(context.started && touchingDirections.IsGrounded) {
+
         }
     }
 }
