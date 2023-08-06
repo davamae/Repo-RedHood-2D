@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5063677449610791020}
   - component: {fileID: 6207390256679890978}
   - component: {fileID: 4588176770488177718}
+  - component: {fileID: 8130301257277729163}
   m_Layer: 0
   m_Name: KnightEnemy
   m_TagString: Untagged
@@ -123,3 +124,16 @@ CapsuleCollider2D:
   m_Offset: {x: -0.01619047, y: -0.12611523}
   m_Size: {x: 0.11177957, y: 0.2805013}
   m_Direction: 0
+--- !u!114 &8130301257277729163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2947670875971341535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 511f6172b805e924ab36721515baf17b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 0.5
