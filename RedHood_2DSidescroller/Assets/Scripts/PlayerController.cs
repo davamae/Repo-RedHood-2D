@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     public float walkSpeed;
+    public float jumpImpulse = 10f;
     Vector2 moveInput; // pulls x and y movement (vector 2)
     TouchingDirections touchingDirections;
 
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     } }
 
     public bool _isFacingRight = true; // default Player is facing right
+
     public bool IsFacingRight { get {
         return _isFacingRight;
     } private set{
@@ -64,8 +66,8 @@ public class PlayerController : MonoBehaviour
     }
 
     public void OnJump(InputAction.CallbackContext context) {
-        if(context.started && touchingDirections.IsGrounded) {
-
+        if(context.started && touchingDirections) {
+            rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
         }
     }
 }
