@@ -13,12 +13,23 @@ public class PlayerController : MonoBehaviour
     Vector2 moveInput; // pulls x and y movement (vector 2)
     TouchingDirections touchingDirections;
 
+    public bool CanMove { get {
+        return animator.GetBool(AnimationStrings.canMove);
+    }}
+
     [SerializeField]
     private bool _isMoving = false;
     
     public bool IsMoving { get 
     {
-        return _isMoving; 
+        if(CanMove)
+        {
+            return _isMoving; 
+        }
+        else {
+            return false;
+        }
+
     } private set 
     {
         _isMoving = value;
@@ -68,7 +79,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public void OnJump(InputAction.CallbackContext context) {
-        if(context.started && touchingDirections) {
+        if(context.started && touchingDirections && CanMove) {
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
         }
     }
