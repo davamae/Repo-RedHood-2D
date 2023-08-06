@@ -5,4 +5,5 @@ using UnityEngine;
 public class AnimationStrings : MonoBehaviour
 {
     internal static string isMoving = "isMoving";
+    internal static string isGrounded = "isGrounded";
 }
