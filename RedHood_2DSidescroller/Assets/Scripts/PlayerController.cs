@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     Vector2 moveInput; // pulls x and y movement (vector 2)
     TouchingDirections touchingDirections;
 
+    bool isGrounded = true;
+
     public bool CanMove { get {
         return animator.GetBool(AnimationStrings.canMove);
     }}
@@ -78,10 +80,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // FINALLY - FIXED DOUBLE JUMP; THIS SECTION ONCOLLISIONENTER2D FIXES the one jump and then stop jumping bug; detects when player is on ground
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.tag == "floor" && isGrounded == false) {
+            isGrounded = true;
+        }
+    }
+
     public void OnJump(InputAction.CallbackContext context) {
-        if(context.started && touchingDirections && CanMove) {
+        if(isGrounded == true && context.started && touchingDirections && CanMove) {
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
         }
+        else {
+            isGrounded = false;
+        }
+
     }
 
     public void OnAttack(InputAction.CallbackContext context) {
