@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     public float walkSpeed;
-    public float jumpImpulse = 20f;
+    public float jumpImpulse;
     Vector2 moveInput; // pulls x and y movement (vector 2)
     TouchingDirections touchingDirections;
 

@@ -1833,7 +1833,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4940155071450102326, guid: 264752bb15913f84a8ab3d70bd8b0658, type: 3}
       propertyPath: walkSpeed
-      value: 1.5
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940155071450102326, guid: 264752bb15913f84a8ab3d70bd8b0658, type: 3}
+      propertyPath: jumpImpulse
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5175296246833596974, guid: 264752bb15913f84a8ab3d70bd8b0658, type: 3}
       propertyPath: m_RootOrder
