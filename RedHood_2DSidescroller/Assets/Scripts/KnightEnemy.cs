@@ -8,7 +8,7 @@ public class KnightEnemy : MonoBehaviour
 {
     public GameObject player; // For enemy to reference the Player; to check if player is on the left or right side
 
-    public bool flip; // for more than one enemy, so all enemies will flip to face Player
+    public float within_range;
 
     public float speed;
 
@@ -19,6 +19,13 @@ public class KnightEnemy : MonoBehaviour
     }
 
     private void Update() {
+
+        float dist = Vector3.Distance(player.transform.position, transform.position);
+
+        if (dist <= within_range) {
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        } 
+
         Vector3 scale = transform.localScale;
 
         if (player.transform.position.x > transform.position.x){ // check if player's x position is greater than enemy's (aka; if player is on right side)
