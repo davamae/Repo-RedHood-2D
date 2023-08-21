@@ -8,9 +8,9 @@ public class KnightEnemy : MonoBehaviour
 {
     public GameObject player; // For enemy to reference the Player; to check if player is on the left or right side
 
-    public float within_range;
+    public float within_range; // For enemy to check if Player is WITHIN range to chase
 
-    public float speed;
+    public float speed; // Speed of Enemy
 
     Rigidbody2D rb;
 
@@ -20,10 +20,10 @@ public class KnightEnemy : MonoBehaviour
 
     private void Update() {
 
-        float dist = Vector3.Distance(player.transform.position, transform.position);
+        float dist = Vector3.Distance(player.transform.position, transform.position); // distance of the Player from the Enemy's position
 
-        if (dist <= within_range) {
-            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        if (dist <= within_range) { // If Player's distance is less or equal to being within the range to Chase
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime); // then Enemy's transform.position equals moving Towards player's position
         } 
 
         Vector3 scale = transform.localScale;
