@@ -45,6 +45,7 @@ public class KnightEnemy : MonoBehaviour
 
         if (player.transform.position.x > transform.position.x){ // check if player's x position is greater than enemy's (aka; if player is on right side)
             scale.x = Mathf.Abs(scale.x); //if yes, then enemy should face the left
+            animator.SetBool("isRunning", true);
 
         } else {
             scale.x = Mathf.Abs(scale.x) * -1; //otherwise enemy should face right
