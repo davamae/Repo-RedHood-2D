@@ -7,6 +7,8 @@ using UnityEngine;
 public class KnightEnemy : MonoBehaviour
 {
     public GameObject player; // For enemy to reference the Player; to check if player is on the left or right side
+    public DetectionZone attackZone;
+    Animator animator;
 
     public float within_range; // For enemy to check if Player is WITHIN range to chase
 
@@ -14,16 +16,29 @@ public class KnightEnemy : MonoBehaviour
 
     Rigidbody2D rb;
 
+    public bool _hasTarget = false;
+    public bool HasTarget { get { return _hasTarget;} private set {
+        _hasTarget = value;
+        animator.SetBool(AnimationStrings.hasTarget, value);
+    } }
+
+    // public bool _isRunning = false;
+
     private void Awake() {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update() {
+
+        HasTarget = attackZone.detectedColliders.Count > 0;
 
         float dist = Vector3.Distance(player.transform.position, transform.position); // distance of the Player from the Enemy's position
 
         if (dist <= within_range) { // If Player's distance is less or equal to being within the range to Chase
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime); // then Enemy's transform.position equals moving Towards player's position
+            
+            // animator.SetBool("isRunning", true);
         } 
 
         Vector3 scale = transform.localScale;
