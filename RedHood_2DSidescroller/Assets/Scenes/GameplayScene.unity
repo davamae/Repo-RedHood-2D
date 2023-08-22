@@ -1842,7 +1842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4940155071450102326, guid: 264752bb15913f84a8ab3d70bd8b0658, type: 3}
       propertyPath: walkSpeed
-      value: 1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4940155071450102326, guid: 264752bb15913f84a8ab3d70bd8b0658, type: 3}
       propertyPath: jumpImpulse
@@ -1949,13 +1949,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4588176770488177718, guid: 653cb8ca6595dc04e88767fabdc3b818, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 8a0cd1065e08dfa4db025bc7ea1fe709, type: 2}
     - target: {fileID: 6207390256679890978, guid: 653cb8ca6595dc04e88767fabdc3b818, type: 3}
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 8a0cd1065e08dfa4db025bc7ea1fe709, type: 2}
+    - target: {fileID: 6207390256679890978, guid: 653cb8ca6595dc04e88767fabdc3b818, type: 3}
+      propertyPath: m_SleepingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207390256679890978, guid: 653cb8ca6595dc04e88767fabdc3b818, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8130301257277729163, guid: 653cb8ca6595dc04e88767fabdc3b818, type: 3}
       propertyPath: speed
-      value: 0.5
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8130301257277729163, guid: 653cb8ca6595dc04e88767fabdc3b818, type: 3}
       propertyPath: player
