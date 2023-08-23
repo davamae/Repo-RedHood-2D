@@ -22,6 +22,13 @@ public class KnightEnemy : MonoBehaviour
         animator.SetBool(AnimationStrings.hasTarget, value);
     } }
 
+    public bool CanMove
+    {
+        get {
+            return animator.GetBool(AnimationStrings.canMove);
+        }
+    }
+
     // public bool _isRunning = false;
 
     private void Awake() {
@@ -35,11 +42,18 @@ public class KnightEnemy : MonoBehaviour
 
         float dist = Vector3.Distance(player.transform.position, transform.position); // distance of the Player from the Enemy's position
 
-        if (dist <= within_range) { // If Player's distance is less or equal to being within the range to Chase
+        if (dist <= within_range && CanMove) 
+        
+        { // If Player's distance is less or equal to being within the range to Chase
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime); // then Enemy's transform.position equals moving Towards player's position
             
             // animator.SetBool("isRunning", true);
-        } 
+        } else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        }
+
+
 
         Vector3 scale = transform.localScale;
 
