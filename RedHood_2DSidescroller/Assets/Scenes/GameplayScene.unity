@@ -182,7 +182,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -1318,7 +1318,11 @@ MonoBehaviour:
   dialogueText: {fileID: 10973183}
   dialogue:
   - Greetings, Witch.
-  - Have you learned your lesson, yet?
+  - 'Did you find whatever it is you were looking for? '
+  - I suppose you aren't the type to give up. You've always been rather stubborn.
+    Best you go on your way, then. It isn't good to be out and about in the dark.
+  - 'If ever you need assistance, well. Don''t ask me. '
+  - 'I hope you find whatever it is you''re looking for. '
   contButton: {fileID: 1263588885}
   wordSpeed: 0.06
   playerIsClose: 0
