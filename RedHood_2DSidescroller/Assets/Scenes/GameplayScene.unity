@@ -1319,8 +1319,8 @@ MonoBehaviour:
   dialogue:
   - Greetings, Witch.
   - 'Did you find whatever it is you were looking for? '
-  - I suppose you aren't the type to give up. You've always been rather stubborn.
-    Best you go on your way, then. It isn't good to be out and about in the dark.
+  - 'I suppose you aren''t the type to give up. You''ve always been rather stubborn. '
+  - Best you go on your way, then. It isn't good to be out and about in the dark.
   - 'If ever you need assistance, well. Don''t ask me. '
   - 'I hope you find whatever it is you''re looking for. '
   contButton: {fileID: 1263588885}
