@@ -1322,10 +1322,10 @@ MonoBehaviour:
   - ...
   - ...
   - ...I'll take your silence as a no, then.
-  - 'I suppose it comes as a relief to know that you aren''t the type to give up.
-    You''ve always been rather stubborn. '
+  - 'Well. It''s a good thing you aren''t the type to give up. You''ve always been
+    rather stubborn. '
   - Best you go on your way, then. It isn't good to be out and about in the dark.
-  - 'If ever you need assistance, well. Don''t ask for me.  '
+  - If ever you need assistance, well. Don't ask me.
   - 'I hope you find whatever it is you''re looking for. '
   contButton: {fileID: 1263588885}
   wordSpeed: 0.06
