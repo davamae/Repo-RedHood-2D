@@ -47,15 +47,8 @@ public class KnightEnemy : MonoBehaviour
         
         { // If Player's distance is less or equal to being within the range to Chase
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime); // then Enemy's transform.position equals moving Towards player's position
-            
-            // animator.SetBool("isRunning", true);
-
-            // BENEATH IS CODE WHERE ENEMY WILL FOREVER KEEP CHASING AFTER PLAYER
-        // } else
-        // {
-        //     transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-        // 
         }
+
 
 
 
