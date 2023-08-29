@@ -6,12 +6,12 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D), typeof(TouchingDirections))]
 public class Knight2Enemy : MonoBehaviour
 {
-    public float walkSpeed = 3f;
+    public float walkSpeed = 3f; // initiating enemy speed
 
-    Rigidbody2D rb;
-    TouchingDirections touchingDirections;
+    Rigidbody2D rb; // referencing rigidbody with new variable name rb
+    TouchingDirections touchingDirections; //reference to TouchingDirections script (for OnWall collisions and ground)
 
-    public enum WalkableDirection { Right, Left }
+    public enum WalkableDirection { Right, Left } 
 
     private WalkableDirection _walkDirection;
     private Vector2 walkDirectionVector = Vector2.right;
