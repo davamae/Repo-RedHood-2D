@@ -47,6 +47,7 @@ public class TouchingDirections : MonoBehaviour
         animator.SetBool(AnimationStrings.isOnCeiling, value);
     } }
 
+    public bool IsGrounded { get; internal set; }
 
     private void Awake() {
         touchingCol = GetComponent<CapsuleCollider2D>();
