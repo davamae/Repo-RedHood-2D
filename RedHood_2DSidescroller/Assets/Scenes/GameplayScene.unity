@@ -275,6 +275,14 @@ CompositeCollider2D:
         Y: -8100000
       - X: -12900001
         Y: -8100000
+    - - X: 7100000
+        Y: -5899999
+      - X: -11100000
+        Y: -5899999
+      - X: -11100000
+        Y: -9100000
+      - X: 7100000
+        Y: -9100000
     - - X: 31100002
         Y: -5899999
       - X: 21899998
@@ -282,20 +290,6 @@ CompositeCollider2D:
       - X: 21899998
         Y: -9100000
       - X: 31100002
-        Y: -9100000
-    - - X: 7100000
-        Y: -6100099
-      - X: 5899958
-        Y: -6100099
-      - X: 5899899
-        Y: -6100040
-      - X: 5899899
-        Y: -5899999
-      - X: -11100000
-        Y: -5899999
-      - X: -11100000
-        Y: -9100000
-      - X: 7100000
         Y: -9100000
     - - X: 21099998
         Y: -7900000
@@ -305,30 +299,14 @@ CompositeCollider2D:
         Y: -11100000
       - X: 21099998
         Y: -11100000
-    - - X: 12100099
-        Y: -12100041
-      - X: 12100099
-        Y: -8899959
-      - X: 12100040
-        Y: -8899900
-      - X: 8899959
-        Y: -8899900
-      - X: 8899900
-        Y: -8899959
-      - X: 8899900
+    - - X: 12099999
         Y: -8900000
       - X: 7900000
         Y: -8900000
       - X: 7900000
         Y: -12100000
-      - X: 8899900
+      - X: 12099999
         Y: -12100000
-      - X: 8899900
-        Y: -12100041
-      - X: 8899959
-        Y: -12100100
-      - X: 12100040
-        Y: -12100100
   m_CompositePaths:
     m_Paths:
     - - {x: -2.2900293, y: -0.6099999}
@@ -344,17 +322,15 @@ CompositeCollider2D:
       - {x: 2.1899998, y: -0.5900292}
       - {x: 2.1900291, y: -0.91}
     - - {x: 0.7099707, y: -0.91}
-      - {x: 0.7099707, y: -0.6100099}
-      - {x: 0.5899899, y: -0.6099746}
-      - {x: 0.58996063, y: -0.5899999}
+      - {x: 0.7099707, y: -0.5899999}
       - {x: -1.11, y: -0.5900292}
       - {x: -1.1099707, y: -0.91}
     - - {x: 2.1099703, y: -1.11}
       - {x: 2.1099703, y: -0.79}
       - {x: 1.49, y: -0.7900293}
       - {x: 1.4900293, y: -1.11}
-    - - {x: 1.2099748, y: -1.21001}
-      - {x: 1.2099748, y: -0.88999003}
+    - - {x: 1.2099706, y: -1.21}
+      - {x: 1.2099706, y: -0.89}
       - {x: 0.79, y: -0.8900293}
       - {x: 0.7900293, y: -1.21}
   m_VertexDistance: 0.0005
@@ -2504,6 +2480,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1408341357 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6253119562819031947, guid: 653cb8ca6595dc04e88767fabdc3b818, type: 3}
+  m_PrefabInstance: {fileID: 7584203180219750772}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44fdfbed3f2d2764083c24b324ab68ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1824362290 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1852570319577436111, guid: 264752bb15913f84a8ab3d70bd8b0658, type: 3}
@@ -2961,6 +2948,10 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6320396747391490523, guid: 653cb8ca6595dc04e88767fabdc3b818, type: 3}
+      propertyPath: attackZone
+      value: 
+      objectReference: {fileID: 1408341357}
     - target: {fileID: 8130301257277729163, guid: 653cb8ca6595dc04e88767fabdc3b818, type: 3}
       propertyPath: speed
       value: 0.4
