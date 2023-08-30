@@ -228,6 +228,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 0.5
+  attackZone: {fileID: 6253119562819031947}
+  _hasTarget: 0
 --- !u!1 &8436042895198781888
 GameObject:
   m_ObjectHideFlags: 0
