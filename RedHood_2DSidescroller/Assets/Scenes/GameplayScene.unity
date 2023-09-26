@@ -1310,12 +1310,11 @@ MonoBehaviour:
   - ...
   - ...
   - ...I'll take that as a no, then.
-  - 'Good thing you aren''t the type to give up. You''ve always been rather stubborn. '
   - Best you go on your way, then. It isn't good to be out and about in the dark.
-  - If ever you need assistance, well. I won't be giving you any.
+  - If ever you need assistance, well. Don't ask me.
   - 'I hope you find whatever it is you''re looking for. '
   contButton: {fileID: 1263588885}
-  wordSpeed: 0.06
+  wordSpeed: 0.1
   playerIsClose: 0
 --- !u!1 &754266782
 GameObject:
